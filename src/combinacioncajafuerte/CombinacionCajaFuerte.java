@@ -5,6 +5,10 @@
  */
 package combinacioncajafuerte;
 
+// Importo el paquete java.util para poder utilizar la clase Scanner
+
+import java.util.*;
+
 /**
  *
  * @author Amarico
@@ -27,6 +31,14 @@ public class CombinacionCajaFuerte {
      *
      *
      */
+    
+    
+    // Creo una variable y una constante de tipo entero
+    
+    final int COMBINACION = 1234;
+    
+    int adivinaCombinacion;
+    
   }
   
 }
