@@ -6,7 +6,6 @@
 package combinacioncajafuerte;
 
 // Importo el paquete java.util para poder utilizar la clase Scanner
-
 import java.util.*;
 
 /**
@@ -20,7 +19,7 @@ public class CombinacionCajaFuerte {
    */
   public static void main(String[] args) {
     // TODO code application logic here
-    
+
     /**
      * Realiza el control de acceso a una caja fuerte. La combinación será un
      * número de 4 cifras. El programa nos pedirá la combinación para abrirla.
@@ -31,14 +30,58 @@ public class CombinacionCajaFuerte {
      *
      *
      */
-    
-    
     // Creo una variable y una constante de tipo entero
-    
     final int COMBINACION = 1234;
+
+    int adivinaCombinacion ;
     
-    int adivinaCombinacion;
+   
+
+   
+
+    // Creo un objeto de la clase Scanner
+    Scanner entrada = new Scanner(System.in);
     
-  }
+    int intentos = 4;
+    
+    
+    
+    boolean acertado = false;
+    
+    do {
+      
+      System.out.println("Introduzca la clave de la caja fuerte");
+      
+      adivinaCombinacion = entrada.nextInt();
+      
+    if (adivinaCombinacion ==  COMBINACION){
+      
+      acertado = true;
+      
+      
+      
+    }else {
+      
+      System.out.println("Clave incorrecta");
+    }
+    
+    intentos --;
+    
+    }while ((intentos > 0) && (!acertado));
+if (acertado){
   
+    System.out.println("Ha abierto la caja fuerte.");
+  
+  }else {
+  
+  System.out.println("Lo siento, ha agotado las 4 oportunidades");
 }
+    
+    
+}
+
+}
+  
+
+
+    
